@@ -1,0 +1,169 @@
+* {
+  font-family: "Open Sans Condensed", sans-serif;
+  box-sizing: border-box;
+  color: rgb(99, 98, 98);
+}
+
+.header {
+  background-color: rgb(199, 224, 241, 0.1);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+main {
+  background-color: rgb(241, 228, 202, 0.1);
+  width: 100%;
+  height: 100%;
+}
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  background-color: gb(212, 241, 240);
+  text-align: center;
+  justify-content: space-around;
+}
+
+.menu a:hover {
+  background-color: rgb(199, 224, 241, 1);
+}
+
+.layout-flex {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: auto;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+.interests_section {
+  text-align: left;
+  float: left;
+  clear: left;
+  margin: auto;
+  padding-left: 30px;
+}
+
+.about_section {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: column;
+  clear: right;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.cv_section {
+  display: flex;
+  clear: left;
+  margin: auto;
+  padding: 30px;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.picture {
+  width: 350px;
+  height: 300px;
+  border-radius: 10%;
+  padding: 0 4px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+.odi {
+  border-radius: 50%;
+}
+
+.vtl {
+  position: relative;
+  padding: 10px 10px 10px 50px;
+  max-width: 400px;
+}
+
+.vtl::before {
+  content: "";
+  width: 5px;
+  background-color: rgb(199, 224, 241);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+}
+
+.event {
+  padding: 20px 30px;
+  background-color: rgb(236, 205, 177, 0.2);
+  position: relative;
+  border-radius: 30%;
+  margin-bottom: 10px;
+}
+
+.event::before {
+  content: "";
+  border: 10px transparent;
+  border-right-color: rgb(199, 224, 241);
+  border-left: 0;
+  position: absolute;
+  top: 20%;
+  left: -10px;
+}
+
+.event::after {
+  content: "";
+  background: transparent;
+  border: 4px solid rgb(199, 224, 241);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: -44px;
+}
+
+.signature {
+  font-family: "Better Grade";
+  font-size: 50px;
+  flex-grow: 1;
+  margin: 0;
+  color: grey;
+}
+
+.contact {
+  padding: 30px;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  background-color: rgb(199, 224, 241, 0.1);
+  width: 100%;
+  height: 100%;
+  color: grey;
+}
+#back-to-top-wrapper {
+  display: flex;
+  float: right;
+  text-align: center;
+}
+.back-to-top-link {
+  float: right;
+  position: fixed;
+  right: 50px;
+  bottom: 10px;
+  max-width: 30px;
+  width: 100%;
+  font-size: 12px;
+}
