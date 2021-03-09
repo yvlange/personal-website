@@ -1,0 +1,9 @@
+* {
+  font-family: "Open Sans Condensed", sans-serif;
+  box-sizing: border-box;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+}

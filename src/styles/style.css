@@ -1,0 +1,160 @@
+* {
+  font-family: "Open Sans Condensed", sans-serif;
+  box-sizing: border-box;
+  color: var(--main-color);
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color-header);
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color-main);
+}
+.menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  background-color: var(--background-color-menu);
+  text-align: center;
+}
+
+.menu a:hover {
+  background-color: var(--hover-color);
+}
+
+.layout-flex {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: auto;
+}
+
+.interests-section {
+  text-align: left;
+  float: left;
+  clear: left;
+  margin: auto;
+  padding: 30px;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  clear: right;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.cv-section {
+  display: flex;
+  clear: left;
+  margin: auto;
+  padding: 30px;
+}
+
+.picture {
+  width: 350px;
+  height: 300px;
+  border-radius: 10%;
+  padding: 0 4px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+.odi {
+  border-radius: 50%;
+}
+
+.vtl {
+  position: relative;
+  padding: 10px 10px 10px 50px;
+  max-width: 400px;
+}
+
+.vtl::before {
+  content: "";
+  width: 5px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  background-color: rgb(199, 224, 241);
+}
+
+.event {
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 30%;
+  margin-bottom: 10px;
+  background-color: rgb(236, 205, 177, 0.2);
+}
+
+.event::before {
+  content: "";
+  border: 10px transparent;
+  border-left: 0;
+  position: absolute;
+  top: 20%;
+  left: -10px;
+  border-right-color: rgb(199, 224, 241);
+}
+
+.event::after {
+  content: "";
+  background: transparent;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: -44px;
+  border: 4px solid rgb(199, 224, 241);
+}
+
+.signature {
+  flex-grow: 1;
+  margin: 0;
+  color: var(--main-color);
+  font-family: "Better Grade";
+  font-size: 50px;
+}
+
+.contact {
+  padding: 30px;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: var(--main-color);
+  background-color: var(--background-color-main);
+}
+#back-to-top-wrapper {
+  display: flex;
+  float: right;
+  text-align: center;
+}
+.back-to-top-link {
+  float: right;
+  position: fixed;
+  right: 50px;
+  bottom: 10px;
+  max-width: 30px;
+  width: 100%;
+  font-size: 12px;
+}
